@@ -11,7 +11,7 @@ p{
     background-color: black;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 38px;
 }
 ul{
     list-style: none;
@@ -19,11 +19,17 @@ ul{
 }
 li{
     margin-bottom: 9px;
-    padding: 0;
+    padding-top: 10px;
 
 }
 .section2{
-    display: flexbox;
-    width: 200px;
-    background-blend-mode: darken;
-}
+    width: 370px;
+    height: 370px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
+  
+

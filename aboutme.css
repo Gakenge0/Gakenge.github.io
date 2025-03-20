@@ -1,0 +1,18 @@
+.description{
+    width: 400px;
+    height: 400px;
+    background: white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* X, Y, Blur, Spread, Color */
+    border-radius: 10px;
+    margin-left: 10px;
+    justify-content: center;
+  }
+  p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    justify-self: center;padding-top: 20px;    
+  }
+
+
+
+  
