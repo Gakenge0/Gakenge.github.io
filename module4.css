@@ -1,0 +1,30 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #fefefe;
+  padding: 25px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #2b3e50;
+}
+
+h2 {
+  color: #3a4f63;
+  margin-top: 20px;
+}
+
+p {
+  color: #444;
+  font-size: 1.05em;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 25px;
+  color: #333;
+}
+
+li {
+  margin-bottom: 10px;
+}
