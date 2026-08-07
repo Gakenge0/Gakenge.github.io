@@ -279,34 +279,48 @@ PROGRESS BAR
 BACK TO TOP
 ==================================================*/
 
-#backToTop{
+#backToTop {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 
-    position:fixed;
+    width: 55px;
+    height: 55px;
 
-    right:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    bottom:30px;
+    border: none;
+    border-radius: 50%;
 
-    width:50px;
+    background: var(--primary);
+    color: #fff;
 
-    height:50px;
+    font-size: 1.2rem;
+    line-height: 1;
 
-    border:none;
+    cursor: pointer;
 
-    border-radius:50%;
+    box-shadow: var(--shadow-md);
 
-    background:var(--primary);
+    z-index: 9999;
 
-    color:white;
+    transition: all .3s ease;
 
-    display:none;
-
-    cursor:pointer;
-
-    z-index:999;
-
+    opacity: 0;
+    visibility: hidden;
 }
 
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop:hover {
+    background: var(--secondary);
+    transform: translateY(-5px);
+}
 /*==================================================
 NAVIGATION
 ==================================================*/
@@ -1622,30 +1636,27 @@ CONTACT
 
 }
 
-.contact-card h4{
+/*==========================================
+CONTACT LINKS OVERRIDE
+==========================================*/
 
-    margin-bottom:25px;
-
+.contact-card a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
 }
 
-.contact-card p{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    margin-bottom:18px;
-
+.contact-card a:hover {
+    color: var(--secondary);
 }
 
-.contact-card i{
+.contact-card p {
+    margin-bottom: 1rem;
+}
 
-    color:var(--primary);
-
-    width:20px;
-
+.contact-card p a {
+    word-break: break-word;
 }
 
 /*==================================================

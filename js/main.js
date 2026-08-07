@@ -81,19 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const backButton = document.getElementById("backToTop");
 
-    window.addEventListener("scroll", () => {
+   window.addEventListener("scroll", () => {
 
-        if (window.scrollY > 500) {
+    if (window.scrollY > 500) {
 
-            backButton.style.display = "flex";
+        backButton.classList.add("show");
 
-        } else {
+    } else {
 
-            backButton.style.display = "none";
+        backButton.classList.remove("show");
 
-        }
+    }
 
-    });
+});
 
     backButton.addEventListener("click", () => {
 
